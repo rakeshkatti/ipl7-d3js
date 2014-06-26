@@ -1,0 +1,122 @@
+ //Lets select colors for each team 
+ $RCB : lighten(rgb(202, 3, 8), 30%);
+ $CSK : lighten(rgb(254, 243, 23), 30%);
+ $KKR : lighten(rgb(58, 23, 98), 30%);
+ $MI : lighten(rgb(0, 142, 214), 30%);
+ $RR : lighten(rgb(1, 76, 161), 30%);
+ $DD : lighten(rgb(44, 51, 98), 30%);
+ $SRH : lighten(rgb(237, 66, 34), 30%);
+ $KXIP : lighten(rgb(215, 26, 36), 30%);
+
+ p {
+     color:red;
+ }
+ .chart text {
+     fill: white;
+     font: 10px sans-serif;
+     /*text-anchor: end;*/
+ }
+ .RCB {
+     fill: $RCB;
+ }
+ .CSK {
+     fill:$CSK;
+ }
+ .KKR {
+     fill:$KKR;
+ }
+ .MI {
+     fill:$MI;
+ }
+ .RR {
+     fill:$RR;
+ }
+ .DD {
+     fill:$DD;
+ }
+ .SRH {
+     fill:$SRH;
+ }
+ .KXIP {
+     fill:$KXIP;
+ }
+ .RCBpath {
+     stroke: $RCB;
+ }
+ .CSKpath {
+     stroke:$CSK;
+ }
+ .KKRpath {
+     stroke:$KKR;
+ }
+ .MIpath {
+     stroke:$MI;
+ }
+ .RRpath {
+     stroke:$RR;
+ }
+ .DDpath {
+     stroke:$DD;
+ }
+ .SRHpath {
+     stroke:$SRH;
+ }
+ .KXIPpath {
+     stroke:$KXIP;
+ }
+ .panel {
+     padding: 30px;
+     background-color: rgb(0, 65, 125);
+     border-color:white;
+     color:white;
+ }
+ .team-logos {
+    float:right;
+ }
+
+ .logo {
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     background: url('../img/team-logos.png');
+ }
+ .SRHlogo {
+    background-position-y:50px;
+    border-bottom: 10px solid $SRH;
+ }
+ .RRlogo {
+    background-position-y:106px;
+    border-bottom: 10px solid $RR;
+ }
+ .RCBlogo {
+    background-position-y:160px; 
+    border-bottom: 10px solid $RCB;
+ }
+ .MIlogo {
+    background-position-y: 215px;
+    border-bottom: 10px solid $MI;
+ }
+ .KXIPlogo {
+    background-position-y: 270px;
+    border-bottom: 10px solid $KXIP;
+ }
+ .KKRlogo {
+    background-position-y: 326px;
+    border-bottom: 10px solid $KKR;
+ }
+ .DDlogo {
+    background-position-y: 380px;
+    border-bottom: 10px solid $DD;
+ }
+ .CSKlogo {
+    background-position-y: 436px;
+    border-bottom: 10px solid $CSK;
+ }
+
+ body {
+    background:rgb(37,70,124);
+    color: white;
+ }
+ footer a{
+    float: right;
+ }

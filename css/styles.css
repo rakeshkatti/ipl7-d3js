@@ -1,0 +1,140 @@
+p {
+  color: red;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  /*text-anchor: end;*/
+}
+
+.RCB {
+  fill: #fd696d;
+}
+
+.CSK {
+  fill: #fffbaf;
+}
+
+.KKR {
+  fill: #8440d2;
+}
+
+.MI {
+  fill: #70cfff;
+}
+
+.RR {
+  fill: #3d97fe;
+}
+
+.DD {
+  fill: #6b75bc;
+}
+
+.SRH {
+  fill: #f9bbaf;
+}
+
+.KXIP {
+  fill: #f2989c;
+}
+
+.RCBpath {
+  stroke: #fd696d;
+}
+
+.CSKpath {
+  stroke: #fffbaf;
+}
+
+.KKRpath {
+  stroke: #8440d2;
+}
+
+.MIpath {
+  stroke: #70cfff;
+}
+
+.RRpath {
+  stroke: #3d97fe;
+}
+
+.DDpath {
+  stroke: #6b75bc;
+}
+
+.SRHpath {
+  stroke: #f9bbaf;
+}
+
+.KXIPpath {
+  stroke: #f2989c;
+}
+
+.panel {
+  padding: 30px;
+  background-color: #00417d;
+  border-color: white;
+  color: white;
+}
+
+.team-logos {
+  float: right;
+}
+
+.logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/team-logos.png");
+}
+
+.SRHlogo {
+  background-position-y: 50px;
+  border-bottom: 10px solid #f9bbaf;
+}
+
+.RRlogo {
+  background-position-y: 106px;
+  border-bottom: 10px solid #3d97fe;
+}
+
+.RCBlogo {
+  background-position-y: 160px;
+  border-bottom: 10px solid #fd696d;
+}
+
+.MIlogo {
+  background-position-y: 215px;
+  border-bottom: 10px solid #70cfff;
+}
+
+.KXIPlogo {
+  background-position-y: 270px;
+  border-bottom: 10px solid #f2989c;
+}
+
+.KKRlogo {
+  background-position-y: 326px;
+  border-bottom: 10px solid #8440d2;
+}
+
+.DDlogo {
+  background-position-y: 380px;
+  border-bottom: 10px solid #6b75bc;
+}
+
+.CSKlogo {
+  background-position-y: 436px;
+  border-bottom: 10px solid #fffbaf;
+}
+
+body {
+  background: #25467c;
+  color: white;
+}
+
+footer a {
+  float: right;
+}
