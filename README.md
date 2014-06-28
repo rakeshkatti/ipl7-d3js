@@ -1,4 +1,4 @@
-##IPL Rankings variation of IPL7 using d3
+##IPL Rankings variation of IPL7 using d3.js
 
 [You can view the demo of this project here](http://rakeshkatti.com/ipl7d3/)
 
