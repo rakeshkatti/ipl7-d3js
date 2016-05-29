@@ -1,121 +1,102 @@
- //Lets select colors for each team 
- $RCB : lighten(rgb(202, 3, 8), 30%);
- $CSK : lighten(rgb(254, 243, 23), 30%);
- $KKR : lighten(rgb(58, 23, 98), 30%);
- $MI : lighten(rgb(0, 142, 214), 30%);
- $RR : lighten(rgb(1, 76, 161), 30%);
- $DD : lighten(rgb(44, 51, 98), 30%);
- $SRH : lighten(rgb(237, 66, 34), 30%);
- $KXIP : lighten(rgb(215, 26, 36), 30%);
+//Lets select colors for each team
+ $RCB : rgb(202, 3, 8);
+ $RPS : rgb(171, 56, 137);
+ $KKR : rgb(58, 23, 98);
+ $MI : rgb(0, 142, 214);
+ $GL : rgb(250, 216, 54);
+ $DD : rgb(44, 51, 98);
+ $SRH : rgb(237, 66, 34);
+ $KXIP : rgb(215, 26, 36);
+ $textBlue : #25467c;
+
+ $teams: (
+ ("RCB", lighten($RCB, 30%), lighten($RCB, 0%), "147px 143px"),
+ ("RPS", lighten($RPS, 30%), lighten($RPS, 0%), "66px -18px"),
+ ("KKR", lighten($KKR, 30%), lighten($KKR, 0%), "-95px -95px"),
+ ("MI", lighten($MI, 30%), lighten($MI, 0%), "144px -95px"),
+ ("GL", lighten($GL, 10%), lighten($GL, 0%), "-14px -95px"),
+ ("DD", lighten($DD, 30%), lighten($DD, 0%), "-14px 143px"),
+ ("SRH", lighten($SRH, 30%), lighten($SRH, 0%), "66px 143px"),
+ ("KXIP", lighten($KXIP, 30%), lighten($KXIP, 0%), "144px -18px"),
+);
+
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  padding: 0 40px;
+}
+
+rect {
+  height: 0px;
+  cursor: pointer;
+  &.current {
+    height: 10px;
+  }
+  &.winner {
+      border-radius: 10px;
+  }
+}
 
  p {
      color:red;
  }
  .chart text {
-     fill: white;
+     fill: $textBlue;
      font: 10px sans-serif;
      /*text-anchor: end;*/
- }
- .RCB {
-     fill: $RCB;
- }
- .CSK {
-     fill:$CSK;
- }
- .KKR {
-     fill:$KKR;
- }
- .MI {
-     fill:$MI;
- }
- .RR {
-     fill:$RR;
- }
- .DD {
-     fill:$DD;
- }
- .SRH {
-     fill:$SRH;
- }
- .KXIP {
-     fill:$KXIP;
- }
- .RCBpath {
-     stroke: $RCB;
- }
- .CSKpath {
-     stroke:$CSK;
- }
- .KKRpath {
-     stroke:$KKR;
- }
- .MIpath {
-     stroke:$MI;
- }
- .RRpath {
-     stroke:$RR;
- }
- .DDpath {
-     stroke:$DD;
- }
- .SRHpath {
-     stroke:$SRH;
- }
- .KXIPpath {
-     stroke:$KXIP;
- }
- .panel {
-     padding: 30px;
-     background-color: rgb(0, 65, 125);
-     border-color:white;
-     color:white;
- }
- .team-logos {
-    float:right;
  }
 
  .logo {
      display: inline-block;
      width: 50px;
      height: 50px;
-     background: url('../img/team-logos.png');
+     background: url('../img/team-logos-2016.png');
  }
- .SRHlogo {
-    background-position-y:50px;
-    border-bottom: 10px solid $SRH;
+@each $team in $teams {
+  .#{nth($team, 1)} {
+    fill: #{nth($team, 2)};
+    &.current {
+      fill: #{nth($team, 3)};
+    }
+    &.lighten {
+        opacity: 0.2;
+    }
+  }
+  .#{nth($team, 1)}path {
+    stroke: #{nth($team, 2)};
+    &.lighten {
+        opacity: 0.2;
+    }
+  }
+  .#{nth($team, 1)}logo {
+    background-position: #{nth($team, 4)};
+    border-bottom: 10px solid #{nth($team, 2)};
+  }
+}
+ .panel {
+     padding: 30px 10px;
+     margin-top: 60px
  }
- .RRlogo {
-    background-position-y:106px;
-    border-bottom: 10px solid $RR;
+ aside {
+   position: fixed;
+   left: 0px;
+   top: 106px;
+   ul {
+     list-style: none;
+     li {
+       color: lighten($textBlue, 50%);
+       font-weight: bold;
+       margin: 32px 0;
+     }
+   }
  }
- .RCBlogo {
-    background-position-y:160px; 
-    border-bottom: 10px solid $RCB;
- }
- .MIlogo {
-    background-position-y: 215px;
-    border-bottom: 10px solid $MI;
- }
- .KXIPlogo {
-    background-position-y: 270px;
-    border-bottom: 10px solid $KXIP;
- }
- .KKRlogo {
-    background-position-y: 326px;
-    border-bottom: 10px solid $KKR;
- }
- .DDlogo {
-    background-position-y: 380px;
-    border-bottom: 10px solid $DD;
- }
- .CSKlogo {
-    background-position-y: 436px;
-    border-bottom: 10px solid $CSK;
+ .team-logos {
+    float:right;
  }
 
  body {
-    background:rgb(37,70,124);
-    color: white;
+    color: $textBlue;
  }
  footer a{
     float: right;

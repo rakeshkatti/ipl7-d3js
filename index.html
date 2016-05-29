@@ -2,25 +2,26 @@
 <html>
 
 <head>
-    <title>IPL 2014 Rank Variations - using d3.js - Rakesh Katti</title>
+    <title>IPL 2016 Rank Variations - using d3.js - Rakesh Katti</title>
     <meta charset="utf-8">
     <!-- <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <div class="container">
-        <h2>IPL 2014 Journey in a graph
+      <header>
+        <h2>IPL 2016 Journey
             <span class="team-logos">
                 <span class="logo RCBlogo"></span>
-                <span class="logo CSKlogo"></span>
-                <span class="logo RRlogo"></span>
+                <span class="logo RPSlogo"></span>
+                <span class="logo GLlogo"></span>
                 <span class="logo MIlogo"></span>
                 <span class="logo KXIPlogo"></span>
                 <span class="logo DDlogo"></span>
@@ -28,16 +29,29 @@
                 <span class="logo SRHlogo"></span>
             </span>
         </h2>
+      </header>
+      <aside class="rank">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </ul>
+      </aside>
         <div class="panel">
             <svg class="chart"></svg>
         </div>
 		<footer>
-		Ingredients used : D3.js, SASS and Bootstrap
+		<!-- Ingredients used : D3.js, SASS and Bootstrap -->
 			<a href="http://rakeshkatti.com">Rakesh Katti</a>
 		</footer>
 
     </div>
-    
+
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
